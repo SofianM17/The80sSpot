@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+html{
+    background-color: #131313;
+    box-sizing: border-box;
+
+}
+
+.Title{
+    font-size: x-large;
+    font-family: 'Train One';
+    color: #CE5E82;
+    text-align: center;
+    margin-top: 3%;
+    animation:flicker 0.09s 8;
+}
+
+@keyframes flicker{
+    0%{     color: #CE5E82;    }
+    49%{    color: #CE5E82; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #CE5E82;    }
+}
+
+.tv_overlay img{
+    position: absolute;
+    width: 45%;
+    margin-left: 2%;
+
+}
+.television img{
+    position: absolute;
+    width: 45%;
+    margin-left: 2%;
+}
+video{
+    margin-top: 6%;
+    margin-left: 8.5%;
+    width: 58%;
+
+}
+
+.television{
+    margin-top: 10%;
+    width: 50%;
+    height: 30vh;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+#powerbtn{
+    position: absolute;
+    height: 3rem;
+    width: 3rem;
+    margin-left: 11.2%;
+    margin-top: 5.5%;
+    background: url(./Media/Powerbtn.png) no-repeat;
+    background-size: 100%;
+
+    border: none;
+    cursor: grab;
+}
+
+
+#channelbtn{
+    position:absolute;
+    margin-top: 12.5%;
+    margin-left: 6.3%;
+    width: 5rem;
+    height: 5rem;
+
+    border: none;
+    cursor: grab;
+    background: none;
+}
+
+button:focus{
+    outline: none;
+}
+
+
+
+.tv-guide, .programmes{
+    color: #ECC6A2;
+    width: 10%;
+    margin-top: 12%;
+    font-family: 'PT Sans', sans-serif;
+
+}
+
+.tv-guide{
+    padding-left: 5%;
+    text-align: left;
+    text-align: center;
+}
+
+.programmes{
+    padding-right: 5%;
+    text-align: center;
+}
+
+.programmes li{
+    list-style: none;
+}
+
+
+#now-playing{
+    position: absolute;
+    font-family: 'Train One', cursive;
+    font-size:18px;
+    color: #00ff66;
+    width: 50%;
+    margin-top: 32%;
+    text-align: center;
+    margin-left: -0.5%;
+    letter-spacing: 5px;
+    /*animation: flicker 2s infinite;*/
+
+}
+
+@keyframes flicker2 {
+    0%{     color: #00ff66;    }
+    49%{    color: #00ff66; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #00ff66;    }
+}
+
+
+.content{
+    display: flex;
+}
