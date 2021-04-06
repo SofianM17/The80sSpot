@@ -1,9 +1,10 @@
 var video = document.getElementById('myVideo');
 var source = document.getElementById('video-Source');
-var vid_sources = ['/Media/GMFlash.mp4', '/Media/Top Gun.mp4', '/Media/KnightRider.mp4', '/Media/Celebration.mp4', '/Media/Billy Jean By Michael Jackson.mp4', '/Media/Back To The Future.mp4', '/Media/Jump.mp4'];
+var vid_sources = ['/Media/The Message by Grandmaster Flash.mp4', '/Media/Ghostbusters.mp4','/Media/Top Gun.mp4', '/Media/Knight Rider.mp4', '/Media/Celebration by Kool & The Gang.mp4', '/Media/Billy Jean By Michael Jackson.mp4', '/Media/Back To The Future.mp4', '/Media/Dont Stop Believin by Journey.mp4'];
 var now_playing = document.getElementById('now-playing')
 var powerbtn = document.getElementById('powerbtn');
 var channelbtn = document.getElementById('channelbtn');
+var btn_deg_count = 0;
 
 now_playing.textContent = "NO SIGNAL";
 now_playing.style.animation="flicker2 3s ease-in-out infinite";
@@ -47,13 +48,18 @@ function power_on() {
 
 function change_channel() {
     if(power){
+        btn_deg_count += 10;
         now_playing.textContent = "NOW PLAYING " + vid_sources[channel_count].substr(7, vid_sources[channel_count].indexOf('.')-7).toUpperCase();
         source.setAttribute('src', vid_sources[channel_count]);
         if (channel_count < vid_sources.length-1) {
             channel_count++;
+
         } else {
             channel_count = 0;
         }
+        channelbtn.style.transitionProperty = "transform";
+        channelbtn.style.transitionDuration = "350ms";
+        channelbtn.style.transform = "rotate(" + btn_deg_count + "deg)";
         video.pause();
         video.load();
         video.play();
