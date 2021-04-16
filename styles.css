@@ -95,6 +95,7 @@ button:focus{
 .tv-guide{
     padding-left: 5%;
     text-align: center;
+    line-height: 25px;
 }
 
 .tv-guide ol{
@@ -107,6 +108,7 @@ button:focus{
     text-align: center;
     padding-left: 0px;
     margin-left: 0px;
+    line-height: 25px;
 }
 
 .programmes li{
