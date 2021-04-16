@@ -51,11 +51,10 @@ video{
 
 #powerbtn{
     position: absolute;
-    height: 3rem;
-    width: 3rem;
     margin-left: 11.2%;
     margin-top: 5.5%;
     background: url(./Media/Powerbtn.png) no-repeat;
+    padding: 1%;
     background-size: 100%;
 
     border: none;
@@ -66,18 +65,20 @@ video{
 #channelbtn{
     position:absolute;
     margin-top: 12.5%;
-    margin-left: 6.3%;
-    width: 5rem;
-    height: 5rem;
+    margin-left: 6.5%;
+    padding: 1.5%;
+    background: url(./Media/ChannelBtn.png) no-repeat;
+    background-size: 100%;
 
+    transform-origin: 47% 50%;
     border: none;
     cursor: grab;
-    background: none;
 }
 
 button:focus{
     outline: none;
 }
+
 
 
 
@@ -89,25 +90,25 @@ button:focus{
 
 }
 
-.tv-guide ol{
-    padding-right: 10%; 
-}
-
 .tv-guide{
     padding-left: 5%;
-    text-align: left;
     text-align: center;
+}
+
+.tv-guide ol{
+    padding-right: 10%;
 }
 
 .programmes{
     padding-right: 5%;
+    width: 12%;
     text-align: center;
-
+    padding-left: 0px;
+    margin-left: 0px;
 }
 
 .programmes li{
     list-style: none;
-
 }
 
 .programmes ul{
@@ -117,9 +118,7 @@ button:focus{
     
 }
 
-.programmes h1{
 
-}
 
 #now-playing{
     position: absolute;
@@ -128,8 +127,9 @@ button:focus{
     color: #00ff66;
     width: 50%;
     margin-top: 32%;
-    text-align: center;
     letter-spacing: 5px;
+    text-align: center;
+    margin-left: 1%;
     /*animation: flicker 2s infinite;*/
 
 }
