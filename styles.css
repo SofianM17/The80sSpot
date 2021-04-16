@@ -43,20 +43,19 @@ video{
 }
 
 .television{
-    margin-top: 10%;
     width: 50%;
     height: 30vh;
     margin: 0 auto;
     margin-top: 5%;
-    margin-right: 6%;
 }
 
 #powerbtn{
     position: absolute;
+    height: 3rem;
+    width: 3rem;
     margin-left: 11.2%;
     margin-top: 5.5%;
     background: url(./Media/Powerbtn.png) no-repeat;
-    padding: 1%;
     background-size: 100%;
 
     border: none;
@@ -67,14 +66,13 @@ video{
 #channelbtn{
     position:absolute;
     margin-top: 12.5%;
-    margin-left: 6.5%;
-    padding: 1.5%;
-    background: url(./Media/ChannelBtn.png) no-repeat;
-    background-size: 100%;
+    margin-left: 6.3%;
+    width: 5rem;
+    height: 5rem;
 
-    transform-origin: 47% 50%;
     border: none;
     cursor: grab;
+    background: none;
 }
 
 button:focus{
@@ -91,23 +89,37 @@ button:focus{
 
 }
 
+.tv-guide ol{
+    padding-right: 10%; 
+}
+
 .tv-guide{
     padding-left: 5%;
+    text-align: left;
     text-align: center;
 }
 
 .programmes{
     padding-right: 5%;
-    width: 12%;
     text-align: center;
-    padding-left: 0px;
-    margin-left: 0px;
+
 }
 
 .programmes li{
     list-style: none;
+
 }
 
+.programmes ul{
+
+
+    padding-right: 10%;
+    
+}
+
+.programmes h1{
+
+}
 
 #now-playing{
     position: absolute;
@@ -117,7 +129,6 @@ button:focus{
     width: 50%;
     margin-top: 32%;
     text-align: center;
-    margin-left: -0.5%;
     letter-spacing: 5px;
     /*animation: flicker 2s infinite;*/
 
@@ -134,4 +145,48 @@ button:focus{
 
 .content{
     display: flex;
+    height: 75vh;
+}
+
+.About{
+    color: #e9dfd6;
+    margin-bottom: 5%;
+    font-family: 'PT Sans', sans-serif;
+    margin-right: 20%;
+    margin-left: 20%;
+    text-align: center;
+    margin-top: 5%;
+    padding: 1%;
+    padding-bottom: 1.5%;
+    line-height: 25px;
+    
+}
+
+.About h1{
+    font-family: 'Train One', cursive;
+    color: #e9dfd6;
+    text-align: center;
+}
+
+.About #first-p{
+    margin-top: 3%;
+}
+
+.about_container{
+    background-color: #c44dcf32;
+}
+
+#link{
+    color: rgb(14, 14, 14);;
+
+}
+
+#source-code{
+    background-color: white;
+    font-weight: 600;
+    color: rgb(14, 14, 14);
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 3%;
+    margin-bottom: 1%;
 }
