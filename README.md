@@ -5,7 +5,7 @@ An example of a project developed using CSS3, HTML5, and some JavaScript.
 ## Key features: 
   - Channel-switching by using an animated channel knob
   - The title of the content currently being played on the television is displayed to the user
-  -  the television can be powered on or off at any time
+  - The television can be powered on or off at any time
 
 ## Instructions
 1. Turn on the television using the power knob
