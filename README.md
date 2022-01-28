@@ -13,3 +13,5 @@ An example of a project developed using CSS3, HTML5, and some JavaScript.
 
 ### Visit the website at the following link:
  https://the80sspot.netlify.app/
+
+[![Image from Gyazo](https://i.gyazo.com/c8d945145ae7668227ffb3fccbcdd608.gif)](https://gyazo.com/c8d945145ae7668227ffb3fccbcdd608)
